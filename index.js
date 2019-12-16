@@ -235,8 +235,9 @@ function drawTasks(period) {
 
 
         let ganttviewGridRow = $('<div class="ganttview-grid-row"></div>');
+        ganttviewGrid.append(ganttviewGridRow);
 
-
+      
         if(period == daily) {
             /*** GRIDS BY DAYS START ***/
             for(let i = 1; i <= datesAll.length; i++){
@@ -244,8 +245,6 @@ function drawTasks(period) {
             }
             /*** GRIDS BY DAYS END ***/
         }
-
-        ganttviewGrid.append(ganttviewGridRow);
 
 
         if(period == weekly) {
